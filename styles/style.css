@@ -1,0 +1,179 @@
+
+/* main styles */
+.bg-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* font styles */
+
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.noto-serif-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+/* tailwind style import */
+@import "tailwindcss";
+
+/* variable Styles */
+
+:root {
+  --main-bg-color: #f0f0f0;
+  --main-text-color: #333333;
+  --accent-color: #0066ff;
+  --padding: 16px;
+  --heading-font-size: 4.0625rem;
+  --heading-span-color: #E95A08;
+  --description-font-size: 1.375rem;
+}
+
+/* shared Styles */
+
+.header-color{
+    color: var(--heading-span-color);
+}
+
+
+/* Nav styles */
+.menu-item{
+    padding: 0px 50px;
+}
+
+/* haro styles */
+.haro-title,
+.plant-title,
+.flower-title,
+.deals-title{
+    font-size: var(--heading-font-size);
+    font-weight: 700;
+    text-transform:uppercase;
+}
+.flower-title{
+    text-transform: none;
+    font-size: 3.125rem;
+}
+.haro-description,
+.plant-description,
+.flower-description,
+.deals-description{
+    font-size: var(--description-font-size);
+    font-weight: 400;
+}
+
+/* our plant style */
+.plant-description{
+    padding: 0rem 7.875rem;
+    margin-bottom: 50px;
+}
+.plant-card-img{
+    width: 100%;
+}
+.plant-card-title{
+    font-size: 1.375rem;
+    font-weight: 500;
+    margin-top: 1.875rem;
+}
+.plant-card-price{
+    font-size: 1.375rem;
+    font-weight: bold;
+    margin-bottom: 1.875rem;
+}
+.btn-plant-card{
+    background-color: #E95A08;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 20px 40px;
+    width: 100%; 
+    display: block; 
+    box-sizing: border-box; 
+}
+
+/* flower & plant lover section */
+.flower-container{
+    position: relative;
+}
+.trusted-badge{
+    position: absolute;
+    top: -120px;
+    left: 355px;
+    width: 286px;
+    height: 286px;
+}
+
+/* deals styles */
+
+.deals--card-title{
+    font-size: 1.25rem;
+}
+.btn-deals{
+    font-size: 1rem;
+}
+
+
+
+/* mobile responsive styles */
+
+@media screen and (max-width:576px) {
+    .bg-container{
+        padding: 1rem;
+    }
+    .menu-items{
+        display: none;
+    }
+    .menu-item{
+    padding: 0px 0px;
+    }
+    .haro-title,
+    .plant-title,
+    .flower-title,
+    .deals-title{
+        font-size: 1.5rem;
+        margin-top: 1.75rem;
+    }
+    .haro-description,
+    .plant-description,
+    .flower-description,
+    .deals-description{
+        margin-top: 1rem;
+    }
+    .plant-description{
+    padding: 0rem 0rem;
+    }
+    .trusted-badge{
+        display: none;
+    }
+    .flower-container-item{
+        display: block;
+    }
+    .flower-container-item img{
+        padding: 0;
+    }
+}
+@media screen and (min-width:577px) and (max-width: 960px) {
+    .bg-container{
+        padding: 1.5rem;
+    }
+    .trusted-badge{
+        display: none;
+    }
+    .flower-container-item{
+        display: block;
+    }
+    .flower-container-item img{
+        padding: 0;
+        width: 100%;
+    }
+} 
