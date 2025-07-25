@@ -147,6 +147,23 @@
     padding: 15px 30px;
 }
 
+/* footer section */
+.footer-content{
+    width: 22.5rem;
+}
+.section-container{
+    padding: 3.125rem;
+}
+.f-menu-item{
+    padding: 0.85rem 0rem;
+    font-size: var(--description-font-size);
+}
+.social-item{
+    width: 4.25rem;
+    height: 4.25rem;
+    border-radius: 50%;
+}
+
 /* mobile responsive styles */
 
 @media screen and (max-width:576px) {
@@ -189,6 +206,9 @@
     .form-item{
     width: 214px;
     }
+    .section-container{
+        display: block;
+    }
 
 }
 @media screen and (min-width:577px) and (max-width: 960px) {
@@ -204,5 +224,8 @@
     .flower-container-item img{
         padding: 0;
         width: 100%;
+    }
+    .section-container{
+        display: block;
     }
 } 
