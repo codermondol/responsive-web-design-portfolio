@@ -1,9 +1,10 @@
 
 /* main styles */
-.bg-container{
+
+.section-container{
     max-width: 1140px;
-    margin: 0 auto;
     padding: 1rem;
+    margin: 0 auto;
 }
 
 /* font styles */
@@ -67,7 +68,8 @@
 .haro-description,
 .plant-description,
 .flower-description,
-.deals-description{
+.deals-description,
+.footer-description{
     font-size: var(--description-font-size);
     font-weight: 400;
 }
@@ -122,12 +124,33 @@
     font-size: 1rem;
 }
 
+/* Subscription Styles */
 
+.subscribe-container{
+    background-image: url(../assets/news-letter-bg.png);
+    padding: 12.5rem 0rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.subscribe-title{
+    font-size: 3.125rem;
+    margin-bottom: 1.5rem;
+}
+.form-item{
+    background-color: white;
+    width: 644px;
+    padding: 15px 20px;
+}
+.btn-form-submit{
+    margin: 0px;
+    padding: 15px 30px;
+}
 
 /* mobile responsive styles */
 
 @media screen and (max-width:576px) {
-    .bg-container{
+    .section-container{
         padding: 1rem;
     }
     .menu-items{
@@ -139,14 +162,16 @@
     .haro-title,
     .plant-title,
     .flower-title,
-    .deals-title{
+    .deals-title,
+    .subscribe-title{
         font-size: 1.5rem;
         margin-top: 1.75rem;
     }
     .haro-description,
     .plant-description,
     .flower-description,
-    .deals-description{
+    .deals-description,
+    .footer-description{
         margin-top: 1rem;
     }
     .plant-description{
@@ -161,6 +186,10 @@
     .flower-container-item img{
         padding: 0;
     }
+    .form-item{
+    width: 214px;
+    }
+
 }
 @media screen and (min-width:577px) and (max-width: 960px) {
     .bg-container{
