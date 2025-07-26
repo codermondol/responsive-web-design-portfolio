@@ -169,6 +169,7 @@
 @media screen and (max-width:576px) {
     .section-container{
         padding: 1rem;
+        display: block;
     }
     .menu-items{
         display: none;
@@ -206,13 +207,10 @@
     .form-item{
     width: 214px;
     }
-    .section-container{
-        display: block;
-    }
 
 }
 @media screen and (min-width:577px) and (max-width: 960px) {
-    .bg-container{
+    .section-container{
         padding: 1.5rem;
     }
     .trusted-badge{
@@ -227,5 +225,8 @@
     }
     .section-container{
         display: block;
+    }
+    .form-item{
+    width: 284px;
     }
 } 
